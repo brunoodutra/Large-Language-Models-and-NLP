@@ -1,0 +1,16 @@
+langchain
+langchain-ollama
+streamlit
+langchain_experimental
+ollama
+tqdm
+langchain-groq
+python-dotenv
+gradio_client
+pdfplumber
+sentence-transformers
+pypdf
+chromadb
+lark
+termcolor
+transformers==4.46.3
