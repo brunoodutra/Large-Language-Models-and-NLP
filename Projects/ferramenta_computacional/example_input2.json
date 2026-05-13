@@ -1,0 +1,26 @@
+{
+  "produto": {
+    "descricao": "Equipamento com identificação por radiofrequência",
+    "classe": "Classe B [Residencial]",
+    "modelo": "Não especificado",
+    "operacao": {
+      "tensao_entrada": "127/220 Vac",
+      "corrente_entrada": "400 mA",
+      "sistema_alimentacao_fornecido": "SIM",
+      "descricao_sistema_alimentacao": "Adaptador AC/DC externo",
+      "software_ou_browser_utilizado": "NÃO",
+      "uso_de_senha_para_configuracao": "NÃO",
+      "portas_telecom_blindadas": "NÃO",
+      "uso_exclusivo_cabos_blindados": "NÃO"
+    },
+    "tecnologias": {
+      "faz_uso_de_tecnologias": "SIM",
+      "lista_tecnologias": ["RFID"],
+      "descricao_tecnologia": "Sistema de Identificação por Radiofrequência (RFID)",
+      "frequencias_operacao": [
+        "902 - 907,5 MHz",
+        "915 - 928 MHz"
+      ]
+    }
+  }
+}

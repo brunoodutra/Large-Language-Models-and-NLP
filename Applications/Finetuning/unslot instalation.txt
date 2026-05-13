@@ -1,0 +1,21 @@
+Passos Instalação Unsloth uv
+Guia de Instalação: Unsloth com uv e Jupyter
+
+1.  Instalar o Python 3.10 via uv (Resolvendo a incompatibilidade do Python 3.8):
+    uv python install 3.10
+
+2.  Criar Ambiente Virtual isolado:
+    uv venv --python 3.10
+
+3.  Ativar o Ambiente:
+    source .venv/bin/activate
+
+4.  Instalar Unsloth e dependências de ML:
+    uv pip install unsloth
+
+5.  Configurar Kernel para o Jupyter:
+    uv pip install ipykernel
+    python -m ipykernel install --user --name unsloth_env --display-name "Python 3.10 (Unsloth)"
+
+6.  Executar:
+    jupyter lab ou uv run --with jupyter jupyter lab

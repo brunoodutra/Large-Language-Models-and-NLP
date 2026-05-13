@@ -1,0 +1,20 @@
+
+{
+  "produto": {
+    "descricao": "Controle remoto",
+    "modelo": "ZAP1",
+    "operacao": {
+      "tensao_entrada": "1.5Vdc",
+      "corrente_entrada": "10mA",
+      "sistema_alimentacao_fornecido": "NÃO",
+      "software_ou_browser_utilizado": "NÃO",
+      "uso_de_senha_para_configuracao": "NÃO",
+      "portas_telecom_blindadas": "NÃO",
+      "uso_exclusivo_cabos_blindados": "NÃO"
+    },
+    "tecnologias": {
+      "faz_uso_de_tecnologias": "SIM",
+      "descricao_tecnologia": "Controle remoto operando em 433 MHz para acionamento de portão"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+quero aprender a usar o langgraph para implementar agents
+
+Tenho desafio inicial para ir aprendendo. Busca de normas a partir de produtos. 
+
+tenho um vector store configurado com normas da anatel de diferentes atos. 
+
+from langchain.vectorstores import Chroma
+
+file_name = "anatel"
+data_path = os.path.join("chroma_db_HF_mxbai", file_name)
+
+vectorstore = Chroma(
+    persist_directory=data_path,
+    embedding_function=embeddings
+)
+
+
+usando isso como retriever consigo pegas metadados e os documentos relevantes
+
+retriever = vectorstore.as_retriever(
+    search_type="mmr",
+    search_kwargs={
+        "k":15,
+        "fetch_k": 30,
+        "lambda_mult": 0.5,
+        "filter": {"title": {"$ne": "INDEX"}}
+    }
+)
+
+
+Preciso que meu agente entenda a entrada, um json, assim :
+
+{'produto': {'descricao': 'Controle remoto',
+  'modelo': 'ZAP1',
+  'operacao': {'tensao_entrada': '1.5Vdc',
+   'corrente_entrada': '10mA',
+   'sistema_alimentacao_fornecido': 'NÃO',
+   'software_ou_browser_utilizado': 'NÃO',
+   'uso_de_senha_para_configuracao': 'NÃO',
+   'portas_telecom_blindadas': 'NÃO',
+   'uso_exclusivo_cabos_blindados': 'NÃO'},
+  'tecnologias': {'faz_uso_de_tecnologias': 'SIM',
+   'descricao_tecnologia': 'Controle remoto operando em 433 MHz para acionamento de portão'}}}
+
+e devolva uma resposta informando os atos aplicáveis e cada itens(com seus respectivos subitens), para mapear os ensaios e testes exigidos e as referências normativas
+
+
+

@@ -1,0 +1,29 @@
+FROM python:3.12.7-slim
+
+WORKDIR /app
+
+# Instalar dependências do sistema
+RUN apt-get update && apt-get install -y \
+    curl \
+    build-essential \
+    gcc \
+    git \
+    && apt-get clean
+
+# Copiar código
+#COPY deepeval/main.py /app/
+COPY requirements.txt /app/
+
+# Instalar pip + dependências
+RUN pip install --upgrade pip && \
+    pip install -r requirements.txt && \
+    pip install jupyterlab ipykernel
+
+# Expor porta do Jupyter
+EXPOSE 8888
+
+# Variável de ambiente customizada
+ENV OLLAMA_HOST=http://ollama:11434
+
+# Comando para iniciar o Jupyter Lab
+CMD ["jupyter", "lab", "--ip=0.0.0.0", "--port=8888", "--no-browser", "--allow-root", "--NotebookApp.token=", "--NotebookApp.password="]

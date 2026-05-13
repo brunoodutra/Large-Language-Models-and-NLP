@@ -1,0 +1,3 @@
+deepeval set-ollama deepseek-r1:8b
+
+api key = MdnwTPgZ5BOOC2NWxBJtUVky80tekFTCjM71+1KQebs=

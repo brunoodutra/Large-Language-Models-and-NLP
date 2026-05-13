@@ -1,0 +1,10 @@
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+**/__pycache__/
+**/chroma_db_ollama/
+**/chroma_db_HF/
+*.bin
+*.sqlite3
+Utils/key.txt
+Utils/notes.txt
+Projects/ferramenta_computacional/*.ipynb

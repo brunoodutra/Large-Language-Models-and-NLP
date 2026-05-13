@@ -1,0 +1,12 @@
+{
+  "[1]": "Potência da portadora não modulada medida na saída do ampliﬁcador de potência do transmissor (conector de entrada da antena);",
+  "[2]": "A emissão em qualquer radiofrequência discreta fora da faixa autorizada deve estar atenuada em relação à potência média de saída do transmissor de: 43 + 10 log10(P) dB, onde P é média de saída em Watts;",
+  "[3]": "A potência de pico máxima na saída do transmissor. Sistemas que façam uso de antenas com ganho superior a 2 dBi devem ter a potência máxima na saída do transmissor reduzida pcorrespondente quantidade em dB que o ganho da antena exceder a 2 dBi;",
+  "[4]": "Limite máximo da potência efetivamente radiada nas radiofrequências portadoras;",
+  "[5]": "Regra de formação da Canalização a ser obedecida na faixa de radiofrequência, que permite o cálculo da radiofrequência portadora (Fn) do canal de indicado por seu número de orde",
+  "[6]": "Mecanismo que permite que, mesmo durante a comunicação, os canais ocupados sejam monitorados, e que seja efetuada troca caso haja canal em melhores condições do que aque",
+  "[7]": "Mecanismo que evita o estabelecimento de um enlace em radiofrequência já ocupada,",
+  "[8]": "Quando for empregada modulação em frequência o desvio máximo permitido é de ±75 kHz, sendo admitidas outras formas de modulação.",
+  "[9]": "Para Telefones sem Cordão operando na faixas 43,7 MHz-47 MHz e de 48,7 MHz-50 MHz a estabilidade de frequência deve ser de 0,01% da radiofrequência de operação, para uma vtemperatura de -10º C a +50º C na tensão nominal de alimentação e para valores variando de 85% a 115% da tensão nominal a 20º C.",
+  "[10]": "Para a faixa"
+}

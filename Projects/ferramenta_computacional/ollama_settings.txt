@@ -1,0 +1,4 @@
+curl -fsSL https://ollama.com/install.sh | sh
+pkill ollama
+export OLLAMA_HOST=0.0.0.0:11434
+ollama serve
